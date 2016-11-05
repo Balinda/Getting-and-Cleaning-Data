@@ -20,7 +20,7 @@ This repository contains all scripts, data, and required files for reproducing m
 run_analysis.R - Code to read and clean data as specified by assignment
 
 ## Output
-tidy.csv	- tidy data set that meets requirements below
+tidy.txt	- tidy data set that meets requirements below
 
 ## How to reproduce results
 1.	Copy files listed under *Files used* to your default directory
