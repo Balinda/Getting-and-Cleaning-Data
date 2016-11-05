@@ -42,7 +42,7 @@ The `run_analysis.R` script contains the following logic:
 
 Variable Name       | Description             | Values
 --------------------|-------------------------|-------
-`Subject`           | ID of Subject           | (1-30)
+`Subject`           | ID of Subject           | Integer (1-30)
 `Activity`          | Activity Name           | Factor (6 levels)
 `activityNumber`    | ID of Activity          | Integer (1-6)
 
