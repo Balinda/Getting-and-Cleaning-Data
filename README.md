@@ -6,14 +6,16 @@ This repository contains all scripts, data, and required files for reproducing m
 **Original data sets can be found here:**  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 **Files used:**	
-X_train.txt		# data from accelerometer and gyroscope for training data
-X_test.txt		# data from accelerometer and gyroscope for test data
-y_train.txt		# activity number the data is associated with for training data
-y_test.txt		# activity number the data is associated with for test data
-subject_train.txt	# number of the subject that carried out the experiment for training data
-subject_test.txt		# number of the subject that carried out the experiment for test data
-features.txt		# Column names for the data
-activity_labels.txt	# Types of activities conducted
+File Name | Description
+------------- | ---------------
+X_train.txt | Data from accelerometer and gyroscope for training data
+X_test.txt | Data from accelerometer and gyroscope for test data
+y_train.txt | Activity number the data is associated with for training data
+y_test.txt | Activity number the data is associated with for test data
+subject_train.txt |Number of the subject that carried out the experiment for training data
+subject_test.txt	| Number of the subject that carried out the experiment for test data
+features.txt | Column names for the data
+activity_labels.txt |Types of activities conducted
 
 ## Scripts
 run_analysis.R		# Code to read and clean data as specified by assignment
@@ -30,10 +32,11 @@ tidy.csv		# tidy data set that meets requirements below
 
 # Assignment
 One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. 
-You should create one R script called run_analysis.R that does the following. 
+You should create one R script called run_analysis.R that does the following:
 1.	Merges the training and the test sets to create one data set.
 2.	Extracts only the measurements on the mean and standard deviation for each measurement. 
 3.	Uses descriptive activity names to name the activities in the data set
 4.	Appropriately labels the data set with descriptive variable names. 
 5.	From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
 
