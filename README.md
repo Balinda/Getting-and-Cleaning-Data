@@ -7,14 +7,14 @@ This repository contains all scripts, data, and required files for reproducing m
 
 **Files used:**	
 
-X_train.txt - Data from accelerometer and gyroscope for training data
-X_test.txt - Data from accelerometer and gyroscope for test data
-y_train.txt - Activity number the data is associated with for training data
-y_test.txt - Activity number the data is associated with for test data
-subject_train.txt - Number of the subject that carried out the experiment for training data
-subject_test.txt - Number of the subject that carried out the experiment for test data
-features.txt - Column names for the data
-activity_labels.txt - Types of activities conducted
+*X_train.txt - Data from accelerometer and gyroscope for training data
+*X_test.txt - Data from accelerometer and gyroscope for test data
+*y_train.txt - Activity number the data is associated with for training data
+*y_test.txt - Activity number the data is associated with for test data
+*subject_train.txt - Number of the subject that carried out the experiment for training data
+*subject_test.txt - Number of the subject that carried out the experiment for test data
+*features.txt - Column names for the data
+*activity_labels.txt - Types of activities conducted
 
 ## Scripts
 run_analysis.R - Code to read and clean data as specified by assignment
