@@ -9,7 +9,7 @@
 
 
 
-## Process used to transform/tidy the data
+## Process used to transform/tidy data
 
 The `run_analysis.R` script contains the following logic:
 
@@ -36,13 +36,13 @@ The `run_analysis.R` script contains the following logic:
 
 5. Averages each variable by Subject and Activity.
 
-6. Resulting data is saved as `tidy.csv`.
+6. Resulting data is saved as `tidy.txt`.
 
 ## Variables
 
 Variable Name       | Description             | Values
 --------------------|-------------------------|-------
-`Subject`           | ID of Subject           | Integer (1-30)
+`Subject`           | ID of Subject           | (1-30)
 `Activity`          | Activity Name           | Factor (6 levels)
 `activityNumber`    | ID of Activity          | Integer (1-6)
 
@@ -60,26 +60,27 @@ Abbreviation        | Description
 `FFT`               | Fast Fourier Transform was done on the data
 `Jerk`              | Determined as being a Jerk Signal
 `Mag`               | Magnitude of signal
-
+`X`                 | Data collected along X-axis
+`Y`                 | Data collected along Y-axis
+`Z`                 | Data collected along Z-axis
 
 ## Output
 
-`tidy.csv` is a 180x69 data frame.
-
+`tidy.txt` is a 180x69 data set.
 
 ## Description of the DATA
-  * The features selected for this database come from the accelerometer and gyroscope using 3-axial raw signals (X, Y, and Z). 
-  * These time domain signals were captured at a constant rate of 50 Hz. 
-  * Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
-  * The acceleration signal was then separated into body and gravity acceleration signals (gravity signal denoted by `Gravity` in field name) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
-  * The body linear acceleration and angular velocity were derived in time to obtain Jerk signals (denoted by `Jerk` in field name). 
-  * The magnitude of these three-dimensional signals were calculated using the Euclidean norm (denoted by `Mag` in field name). 
-  * A Fast Fourier Transform (FFT) was applied to some of these signals (denoted by `FFT` in field name). 
+The features selected for this database come from the accelerometer and gyroscope using 3-axial raw signals (X, Y, and Z). 
+These time domain signals were captured at a constant rate of 50 Hz. 
+Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
+The acceleration signal was then separated into body and gravity acceleration signals (gravity signal denoted by `Gravity` in field name) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+The body linear acceleration and angular velocity were derived in time to obtain Jerk signals (denoted by `Jerk` in field name). 
+The magnitude of these three-dimensional signals were calculated using the Euclidean norm (denoted by `Mag` in field name). 
+A Fast Fourier Transform (FFT) was applied to some of these signals (denoted by `FFT` in field name). 
 
 The original set of variables that were estimated from these signals are: 
-   * mean(): Mean value
-   * std(): Standard deviation
+
+mean(): Mean value
+std(): Standard deviation
 
 These values were further summarized by averaging the data by the combination of Subject and Activity.
-
 `NOTE: averaging standard deviation values does not render useful data. It should be converted to variance before averaging and then converted back to StdDev.`
