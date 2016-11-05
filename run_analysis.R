@@ -56,8 +56,9 @@ names(mean_std_data) <- gsub("std", "StdDev",names(mean_std_data))	# change std 
 #
 # 5. Average each variable by activity and subject.
 #
-group_data <- group_by(mean_std_data, Subject, Activity)			#group by subject & activity
-group_data_means <- summarize_each(group_data, funs(mean)) 	#capture mean of grouped data
+group_data <- group_by(mean_std_data, Subject, Activity)	#group by subject & activity
+group_data_means <- summarize_each(group_data, funs(mean)) 	#capture mean of grouped data 
+# NOTE: mean of StdDev is not a useful value
 #
 # save tidy data with summarized means
 write.csv(group_data_means, "tidy.csv")
