@@ -8,15 +8,13 @@ This repository contains all scripts, data, and required files for reproducing m
 **Files used:**	
 
 X_train.txt - Data from accelerometer and gyroscope for training data
-
 X_test.txt - Data from accelerometer and gyroscope for test data
-
 y_train.txt - Activity number the data is associated with for training data
-4. y_test.txt - Activity number the data is associated with for test data
-5. subject_train.txt - Number of the subject that carried out the experiment for training data
-6. subject_test.txt - Number of the subject that carried out the experiment for test data
-7. features.txt - Column names for the data
-8. activity_labels.txt - Types of activities conducted
+y_test.txt - Activity number the data is associated with for test data
+subject_train.txt - Number of the subject that carried out the experiment for training data
+subject_test.txt - Number of the subject that carried out the experiment for test data
+features.txt - Column names for the data
+activity_labels.txt - Types of activities conducted
 
 ## Scripts
 run_analysis.R - Code to read and clean data as specified by assignment
@@ -26,7 +24,7 @@ tidy.csv	- tidy data set that meets requirements below
 
 ## How to reproduce results
 1.	Copy files listed under *Files used* to your default directory
-2.	Copy script(s) to your default directory
+2.	Copy script (run_analysis.R) to your default directory
 3.	Source run_analysis.R
 4.	Change directory in setwd command (line 2) to your default directory
 5.	Run the updated run_analysis.R script
